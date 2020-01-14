@@ -41,7 +41,9 @@ public:
 		// 函数类型/指向函数的指针
 		int f(int*, int);
 		using F = int(int*, int);
+		typedef int F1(int*, int);
 		using FP = int(*)(int*, int);
+		typedef int (*FP1)(int*, int);
 		// 返回函数指针
 		{ F *f1(string s); }
 		{ FP f1(string s); }
