@@ -5,6 +5,7 @@
 
 using namespace std;
 
+// constexpr objects are const and are initialized with values known during compilation
 constexpr size_t scale(int s) { return s * 2; }
 
 class c06 {
@@ -35,6 +36,8 @@ public:
 
 		auto s = scale(3);
 		int arr[scale(3)];
+		constexpr auto len = scale(4);
+		int arr2[len];
 		int i = 2;
 		auto j = scale(i);
 
