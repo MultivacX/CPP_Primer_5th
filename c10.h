@@ -25,7 +25,7 @@ public:
 		// find_if for_each
 
 		// lambda 捕获列表只用于局部非static变量
-		// bind placeholders
+		// bind: placeholders 参数占位符; 绑定引用参数 ref(param)
 
 	}
 };
