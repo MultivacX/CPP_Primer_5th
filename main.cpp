@@ -7,9 +7,10 @@
 #include "c09.h"
 #include "c10.h"
 #include "c11.h"
+#include "c12.h"
 
 int main() {
-    c03::test();
+    c12::test();
 
     return 0;
 }

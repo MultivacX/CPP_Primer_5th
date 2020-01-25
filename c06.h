@@ -10,7 +10,7 @@ constexpr size_t scale(int s) { return s * 2; }
 
 class c06 {
 public:
-	void fcn(const int i) {}
+	void fcn(const int i) { /*i = 2;*/ }
 	// void fcn(int i) {} // ERROR: 重复定义, 同上, 当用实参初始化形参时会忽略掉顶层 const
 
 	void print(const int*) {}
