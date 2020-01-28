@@ -59,6 +59,7 @@ public:
 		// 为什么智能指针的删除器不一样？
 
 		// weak.lock() 返回对应的 shared_ptr 或者 空shared_ptr
+		// https://stackoverflow.com/questions/29059343/why-cant-a-weak-ptr-be-constructed-from-a-unique-ptr
 
 		int* pia = new int[10]{1, 2, 3, 4};
 		int pia0 = *pia;
