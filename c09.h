@@ -2,12 +2,13 @@
 
 #include <vector>
 #include <list>
+#include <unordered_set>
 
 using namespace std;
 
 class c09 {
 public:
-	void test() {
+	void static test() {
 		// deque []
 		// list : double linked list
 
@@ -47,5 +48,11 @@ public:
 		// resize 会删除或增加相应数量差额的元素
 
 		// to_string sto*
+
+		unordered_multiset<int> ms{2, 2, 2};
+		// ms.erase(2); // remove all 2
+		ms.erase(ms.begin()); // remove the 1st 2
+
+		cout << endl;
 	}
 };
