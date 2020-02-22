@@ -42,6 +42,10 @@ public:
         i1 = 100;
         std::cout << r3 << std::endl;
 
+        const int ci = 99;
+        int& vi = const_cast<int&>(ci);
+        vi = 100;
+
         // 指针是对象 引用是别名
         // top-level const
         // low-level const

@@ -57,6 +57,8 @@ public:
 		// 可以拷贝或赋值一个将要被销毁的 unique_ptr：比如返回一个 unique_ptr
 
 		// 为什么智能指针的删除器不一样？
+		// https://stackoverflow.com/questions/27742290/deleter-type-in-unique-ptr-vs-shared-ptr
+		// https://stackoverflow.com/questions/21355037/why-does-unique-ptr-take-two-template-parameters-when-shared-ptr-only-takes-one
 
 		// weak.lock() 返回对应的 shared_ptr 或者 空shared_ptr
 		// https://stackoverflow.com/questions/29059343/why-cant-a-weak-ptr-be-constructed-from-a-unique-ptr

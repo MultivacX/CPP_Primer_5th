@@ -8,6 +8,20 @@ using namespace std;
 // constexpr objects are const and are initialized with values known during compilation
 constexpr size_t scale(int s) { return s * 2; }
 
+int print_arr(int(&r)[10], int i) {
+	cout << "ref: " << r[i] << endl;
+	return r[i];
+}
+
+//int print_arr(int (*p)[10], int i) {
+//	return (*p)[i];
+//}
+
+int print_arr(int p[][10], int i) {
+	cout << "ptr: " << (*p)[i] << endl;
+	return (*p)[i];
+}
+
 class c06 {
 public:
 	void fcn(const int i) { /*i = 2;*/ }
@@ -54,6 +68,19 @@ public:
 		{ auto f1(string s)->int(*)(int*, int); }
 		{ auto f1(string s)->FP; }
 		{ decltype(f) *f1(string s); }
+
+		{
+			int arr[10] = { 10, 11, 12, 13 };
+			print_arr(arr, 2);
+			print_arr(&arr, 2);
+			int matrix[2][10] = { { 10, 11, 12, 13 }, { 20, 21, 22, 23 } };
+			print_arr(matrix[0], 2);
+			print_arr(matrix[1], 2);
+			print_arr(&matrix[0], 2);
+			print_arr(matrix, 2);
+			print_arr(&matrix[1], 2);
+			print_arr(matrix + 1, 2);
+		}
 	}
 
 	int(*func(int i))[10]{ return nullptr; }

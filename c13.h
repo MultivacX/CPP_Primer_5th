@@ -116,6 +116,8 @@ public:
 		// delete ps; // delete const is OK
 		// ps = nullptr; // ERROR
 		// ++i; // ERROR
+		int* ii = const_cast<int*>(&i);
+		*ii = 100;
 		return *this; 
 	}
 
