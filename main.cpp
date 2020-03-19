@@ -12,6 +12,7 @@
 #include "c14.h"
 #include "c15.h"
 #include "c16.h"
+#include "c18.h"
 
 int main() {
     c16::test();
