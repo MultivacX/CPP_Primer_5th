@@ -13,9 +13,11 @@
 #include "c15.h"
 #include "c16.h"
 #include "c18.h"
+#include "c19.h"
 
 int main() {
     c16::test();
+    c19::test();
 
     return 0;
 }
